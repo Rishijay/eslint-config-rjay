@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-rjay",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
+  "keywords": [],
+  "author": "Rishijay Shrivastava",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-check-file": "^1.3.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.3"
+  }
+}
