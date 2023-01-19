@@ -1,8 +1,9 @@
 module.exports = {
   extends: [
-    "airbnb"
+    "airbnb",
+    "plugin:react/recommended",
   ],
-  plugins: ["check-file"],
+  plugins: ['react','react-hooks', 'check-file'],
   rules: {
     "linebreak-style": 0,
     camelcase: ["error", { properties: "always" }],
