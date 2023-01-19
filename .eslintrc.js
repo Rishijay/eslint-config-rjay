@@ -8,7 +8,7 @@ module.exports = {
   ],
   plugins: ["react-hooks", "check-file"],
   rules: {
-    "linebreak-style": ['warning', process.platform === 'win32' ? 'windows' : 'unix'],
+    "linebreak-style": 0,
     camelcase: ["error", { properties: "always" }],
     "check-file/filename-naming-convention": [
       "error",
