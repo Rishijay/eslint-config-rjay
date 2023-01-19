@@ -30,7 +30,6 @@ module.exports = {
         "**/*.{js,ts}": "CAMEL_CASE",
       },
     ],
-    "check-file/no-index": "error",
     "check-file/folder-naming-convention": [
       "error",
       {
