@@ -1,19 +1,36 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
   extends: [
-    "airbnb",
-    "plugin:react/recommended",
+    'plugin:react/jsx-runtime',
+    'airbnb',
   ],
-  plugins: ['check-file'],
+  overrides: [
+    {
+      files: ["*.jsx", "*.js", "*.tsx", "*.ts"],
+    },
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: [
+    "check-file",
+    "react",
+  ],
   rules: {
-    "linebreak-style": 0,
-    camelcase: ["error", { properties: "always" }],
+    quotes: 0,
+    'react/react-in-jsx-scope': 0,
     "check-file/filename-naming-convention": [
       "error",
       {
-        "*/.{js,ts}": "CAMEL_CASE",
-        "*.{jsx,tsx}": "PASCAL_CASE",
+        "**/*.{jsx,tsx}": "PASCAL_CASE",
+        "**/*.{js,ts}": "CAMEL_CASE",
       },
     ],
+    "check-file/no-index": "error",
     "check-file/folder-naming-convention": [
       "error",
       {
