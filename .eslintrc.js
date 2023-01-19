@@ -8,8 +8,7 @@ module.exports = {
   ],
   plugins: ["react-hooks", "check-file"],
   rules: {
-    quotes: ["error", "double"],
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": ['warning', process.platform === 'win32' ? 'windows' : 'unix'],
     camelcase: ["error", { properties: "always" }],
     "check-file/filename-naming-convention": [
       "error",
@@ -22,7 +21,6 @@ module.exports = {
       "error",
       {
         "src/**/": "CAMEL_CASE",
-        "mocks/*/": "KEBAB_CASE",
       },
     ],
   },
