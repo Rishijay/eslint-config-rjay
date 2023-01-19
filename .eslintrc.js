@@ -3,7 +3,7 @@ module.exports = {
     "airbnb",
     "plugin:react/recommended",
   ],
-  plugins: ['react','react-hooks', 'check-file'],
+  plugins: ['check-file'],
   rules: {
     "linebreak-style": 0,
     camelcase: ["error", { properties: "always" }],
