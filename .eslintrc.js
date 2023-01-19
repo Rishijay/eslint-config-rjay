@@ -1,9 +1,8 @@
 module.exports = {
   extends: [
-    "airbnb",
-    "eslint:recommended",
+    "airbnb"
   ],
-  plugins: ["react-hooks", "check-file"],
+  plugins: ["check-file"],
   rules: {
     "linebreak-style": 0,
     camelcase: ["error", { properties: "always" }],
