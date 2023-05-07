@@ -3,7 +3,14 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/jsx-runtime", "airbnb"],
+  extends: [
+    "plugin:react/jsx-runtime",
+    "airbnb",
+    "./Rules/comments-above",
+    "./Rules/file-naming",
+    "./Rules/function-comments",
+    "./Rules/variable-naming",
+  ],
   overrides: [
     {
       files: ["*.jsx", "*.js", "*.tsx", "*.ts"],
@@ -15,9 +22,9 @@ module.exports = {
   },
   plugins: ["react"],
   ignorePatterns: ["index.js", "*.test.js", "index.*.js", "dist/*", "public/*"],
-  rules: {
-    "eslint-config-rjay/file-naming": "error",
-    "eslint-config-rjay/comments-above": "error",
+  Rules: {
+    "file-naming": "error",
+    "comments-above": "error",
     quotes: 0,
     "linebreak-style": 0,
     "react/react-in-jsx-scope": 0,
@@ -35,9 +42,6 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
-    "eslint-config-rjay/variable-naming": [
-      "error",
-      { exceptionFile: ".variableignore" },
-    ],
+    "variable-naming": ["error", { exceptionFile: ".variableignore" }],
   },
 };
