@@ -16,8 +16,8 @@ module.exports = {
   plugins: ["react"],
   ignorePatterns: ["index.js", "*.test.js", "index.*.js", "dist/*", "public/*"],
   rules: {
-    "file-naming": "error",
-    "comments-above": "error",
+    "eslint-config-rjay/file-naming": "error",
+    "eslint-config-rjay/comments-above": "error",
     quotes: 0,
     "linebreak-style": 0,
     "react/react-in-jsx-scope": 0,
@@ -35,6 +35,9 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
-    "variable-naming": ["error", { exceptionFile: ".variableignore" }],
+    "eslint-config-rjay/variable-naming": [
+      "error",
+      { exceptionFile: ".variableignore" },
+    ],
   },
 };
